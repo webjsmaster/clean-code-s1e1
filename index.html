@@ -10,47 +10,51 @@
         <img class="heading__image" src="./eisenhower-matrix.jpg">
         <a class="heading__more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
-    <main class="centered-main-page-element">
-        <p>
+    <main class="centered">
+        <div class="centered__item">
             <label for="new-task">Add Item</label>
             <div class="task-row-wrapper">
                 <input id="new-task"class="task" type="text">
-                <button>Add</button>
+                <button class="centered__btn">Add</button>
             </div>
-        </p>
-        <h3>Todo</h3>
-        <ul id="incompleteTasks">
-            <li>
-                <input type="checkbox">
-                <label class="task">Pay Bills</label>
-                <input type="text" class="task">
-                <button class="edit">Edit</button>
-                <button class="delete">
-                    <img src="./remove.svg">
-                </button>
-            </li>
-            <li class="edit">
-                <input type="checkbox">
-                <label class="task">Go Shopping</label>
-                <input type="text" value="Go Shopping" class="task">
-                <button class="edit">Save</button>
-                <button class="delete">
-                    <img src="./remove.svg">
-                </button>
-            </li>
-        </ul>
-        <h3>Completed</h3>
-        <ul id="completed-tasks">
-            <li>
-                <input type="checkbox" checked>
-                <label class="task">See the Doctor</label>
-                <input type="text" class="task">
-                <button class="edit">Edit</button>
-                <button class="delete">
-                    <img src="./remove.svg">
-                </button>
-            </li>
-        </ul>
+        </div>
+        <div class="centered__item">
+            <h3 class="centered__title">Todo</h3>
+            <ul id="incompleteTasks">
+                <li>
+                    <input type="checkbox">
+                    <label class="task">Pay Bills</label>
+                    <input type="text" class="task">
+                    <button class="centered__btn centered__btn_edit">Edit</button>
+                    <button class="centered__btn centered__btn_delete">
+                        <img src="./remove.svg">
+                    </button>
+                </li>
+                <li class="edit">
+                    <input type="checkbox">
+                    <label class="task">Go Shopping</label>
+                    <input type="text" value="Go Shopping" class="task">
+                    <button class="centered__btn centered__btn_edit">Save</button>
+                    <button class="centered__btn centered__btn_delete">
+                        <img src="./remove.svg">
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="centered__item">
+            <h3 class="centered__title">Completed</h3>
+            <ul id="completed-tasks">
+                <li>
+                    <input type="checkbox" checked>
+                    <label class="task">See the Doctor</label>
+                    <input type="text" class="task">
+                    <button class="centered__btn centered__btn_edit">Edit</button>
+                    <button class="centered__btn centered__btn_delete">
+                        <img src="./remove.svg">
+                    </button>
+                </li>
+            </ul>
+        </div>
     </main>
     <script type="text/javascript" src="app.js"></script>
 </body>

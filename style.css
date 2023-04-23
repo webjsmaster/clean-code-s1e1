@@ -21,7 +21,7 @@ body {
 .heading { text-align: center;
 }
 }
-.centered-main-page-element {
+.centered {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -38,13 +38,13 @@ ul {
     margin:0;
     padding: 0px;
 }
-li, h3 {
+li, .centered__title {
     list-style:none;
 }
-input,button{
+input, .centered__btn{
     outline:none;
 }
-button {
+.centered__btn {
     background: none;
     border: 0px;
     color: #888;
@@ -53,11 +53,11 @@ button {
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
-button:hover {
+.centered__btn:hover {
     color: #3a3A3a;
 }
 /* Heading */
-h3,
+.centered__title,
 label[for='new-task'] {
     color: #333;
     font-weight: 700;
@@ -118,12 +118,12 @@ li > label {
 li >    input[type="text"] {
     width: 226px
 }
-button.delete img {
+.centered__btn_delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.centered__btn_delete img:hover {
     transform: rotateZ(0);
 }
 
