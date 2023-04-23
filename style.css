@@ -21,7 +21,7 @@ body {
 
     .heading { text-align: center;
     }
-    
+
 }
 .centered {
     display: block;
@@ -32,7 +32,7 @@ body {
 .menu__label {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
 }
 .task-row-wrapper {
     display: flex;
@@ -120,7 +120,7 @@ input#new-task {
     width: 226px;
 }
 .menu__item >    input[type="text"] {
-    width: 226px
+    width: 226px;
 }
 .centered__btn_delete img {
     height: 2em;
@@ -139,12 +139,12 @@ input#new-task {
 
 /* Edit Task */
 .menu__input {
-    display:none
+    display:none;
 }
 
 .menu__input.edit {
     display:inline-block;
-    width:224px
+    width:224px;
 }
 
 .menu__label.edit{
