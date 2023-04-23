@@ -57,7 +57,7 @@ input, .centered__btn{
     color: #3a3A3a;
 }
 /* Heading */
-.item__title,
+.menu__title,
 label[for='new-task'] {
     color: #333;
     font-weight: 700;
