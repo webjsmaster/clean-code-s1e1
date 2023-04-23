@@ -34,11 +34,11 @@ body {
 .task-row-wrapper {
     display: flex;
 }
-ul {
+.menu__list {
     margin:0;
     padding: 0px;
 }
-li, .centered__title {
+.menu__item, .centered__title {
     list-style:none;
 }
 input, .centered__btn{
@@ -93,7 +93,7 @@ input#new-task {
 }
 
 /* Task list */
-li {
+.menu__item {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -102,20 +102,20 @@ li {
     justify-content: space-between;
     align-items: center;
 }
-li > * {
+.menu__item > * {
     vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.menu__item > input[type="checkbox"] {
     margin: 0 10px;
 }
-li > label {
+.menu__item > label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
+.menu__item >    input[type="text"] {
     width: 226px
 }
 .centered__btn_delete img {
