@@ -41,7 +41,7 @@ var createNewTaskElement=function(taskString){
     checkBox.className="menu__checkbox"
 
     editInput.type="text";
-    editInput.className="task";
+    editInput.className="menu__input";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="centered__btn centered__btn_edit";
@@ -85,7 +85,7 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector('input[type=text]');
+    var editInput=listItem.querySelector('.menu__input');
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".centered__btn_edit");
     var containsClass=listItem.classList.contains("edit");
@@ -103,6 +103,8 @@ var editTask=function(){
 
     //toggle .edit on the parent.
     listItem.classList.toggle("edit");
+    editInput.classList.toggle("edit");
+    label.classList.toggle("edit");
 };
 
 

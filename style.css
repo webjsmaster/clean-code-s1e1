@@ -26,7 +26,8 @@ body {
     width: 500px;
     margin: 0 auto 0;
 }
-.task, .menu__label {
+[class*="__input"],
+.menu__label {
     width: 56%;
     display: inline-block;
     flex-grow: 1
@@ -41,7 +42,8 @@ body {
 .menu__item, .centered__title {
     list-style:none;
 }
-input, .centered__btn{
+[class*="__input"],
+.centered__btn{
     outline:none;
 }
 .centered__btn {
@@ -67,7 +69,7 @@ label[for='new-task'] {
     margin: 0;
     text-transform: uppercase;
 }
-input[type="text"] {
+[class*="__input"]{
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -79,7 +81,7 @@ input[type="text"] {
     font-family: Lato, sans-serif;
     color: #888;
 }
-input[type="text"]:focus {
+[class*="__input"]:focus {
     color: #333;
 }
 
@@ -134,15 +136,15 @@ input#new-task {
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.menu__input {
     display:none
 }
 
-ul li.edit input[type=text] {
+.menu__input.edit {
     display:inline-block;
     width:224px
 }
 
-ul li.edit label {
+.menu__label.edit{
     display:none;
 }
