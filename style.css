@@ -92,7 +92,7 @@ label[for='new-task'] {
     display: block;
     margin: 0 0 20px;
 }
-input#new-task {
+.centered__input {
     width: 318px;
 }
 
