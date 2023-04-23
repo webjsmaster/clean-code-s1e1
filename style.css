@@ -62,7 +62,7 @@ body {
 }
 /* Heading */
 .menu__title,
-label[for='new-task'] {
+.centered__label {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -88,7 +88,7 @@ label[for='new-task'] {
 }
 
 /* New Task */
-label[for='new-task'] {
+.centered__label {
     display: block;
     margin: 0 0 20px;
 }
